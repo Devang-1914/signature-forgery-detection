@@ -46,7 +46,7 @@ def main():
         similarity_score = compare_images(genuine_signature_resized, forged_signature_resized)
 
         # Set a threshold to classify real and fake signatures
-        threshold = 0.7
+        threshold = 0.55
 
         # Display the result
         if similarity_score > threshold:
