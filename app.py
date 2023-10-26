@@ -25,8 +25,8 @@ def main():
     # Allow user to upload two image files
     i = st.camera_input("Take a picture", key="camera1")
     i_2 = st.camera_input("Take another picture", key="camera2")
-    gen = st.file_uploader("Upload Genuine Signature", type=["png", "jpg", "jpeg"])
-    forged = st.file_uploader("Upload Forged Signature", type=["png", "jpg", "jpeg"])
+    # gen = st.file_uploader("Upload Genuine Signature", type=["png", "jpg", "jpeg"])
+    # forged = st.file_uploader("Upload Forged Signature", type=["png", "jpg", "jpeg"])
 
     if i_2 and i:
         genuine_signature = cv2.imdecode(np.fromstring(i_2.read(), np.uint8), cv2.IMREAD_COLOR)
